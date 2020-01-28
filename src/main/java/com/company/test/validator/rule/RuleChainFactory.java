@@ -6,7 +6,7 @@ public class RuleChainFactory {
     public static Rule getChain() {
         Rule chain = new IsPartnerAndNoCookingTimeRule();
         chain.setNext(new IsShopperAndNoCookingTimeRule())
-                .setNext(new HasNoLatLong());
+                .setNext(new HasNoLatLongRule());
         return chain;
     }
 }

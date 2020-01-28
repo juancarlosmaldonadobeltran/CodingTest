@@ -2,7 +2,7 @@ package com.company.test.validator.rule;
 
 import com.company.test.validator.Order;
 
-public class HasNoLatLong extends Rule {
+public class HasNoLatLongRule extends Rule {
 
     @Override
     public boolean check(Order order) {
